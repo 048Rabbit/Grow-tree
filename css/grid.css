@@ -1,0 +1,33 @@
+:root {
+  --grid-width: 1140px;
+  --grid-gutter: .5em;
+}
+
+.container {
+  max-width: clac(var(--grid-width) + var(--grid-gutter) * 2);
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  margin: 0 calc(var(--grid-gutter) * -1);
+}
+
+.col {
+  width: fit-content;
+  padding: 0 var(--grid-gutter);
+}
+
+.col-lead {
+  flex: 1;
+}
+
+.col--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col--right {
+  justify-content: right;
+}
