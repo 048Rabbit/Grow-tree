@@ -4,7 +4,9 @@
 }
 
 .container {
-  max-width: clac(var(--grid-width) + var(--grid-gutter) * 2);
+  max-width: calc(var(--grid-width) + var(--grid-gutter) * 2);
+  min-width: calc(320px + var(--grid-gutter) * 2);
+  padding: 0 var(--grid-gutter);
   margin: auto;
 }
 
@@ -29,5 +31,6 @@
 }
 
 .col--right {
+  display: flex;
   justify-content: right;
 }
